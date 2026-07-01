@@ -178,7 +178,7 @@ export default function Home() {
     <div className="min-h-screen">
       
       {/* 1. Hero Section (Redesigned Full-Bleed sliding carousel with bottom tabs) */}
-      <section className="relative w-full h-[85vh] lg:h-[90vh] min-h-[600px] lg:min-h-[700px] bg-deep-plum overflow-hidden flex items-stretch">
+      <section className="relative w-full h-[90vh] lg:h-[90vh] min-h-[680px] sm:min-h-[700px] bg-deep-plum overflow-hidden flex items-stretch">
 
         {/* Slide progress dots — top right */}
         <div className="absolute top-6 right-6 z-30 flex items-center gap-2">
@@ -205,17 +205,17 @@ export default function Home() {
                 setDirection(idx > currentSlide ? 1 : -1);
                 setCurrentSlide(idx);
               }}
-              className={`py-4 lg:py-5 px-4 text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 border-r border-white/10 last:border-r-0 ${
+              className={`py-3 sm:py-4 lg:py-5 px-2 sm:px-4 text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-0.5 sm:gap-1 border-r border-white/10 last:border-r-0 ${
                 currentSlide === idx 
                   ? "bg-white text-deep-plum font-semibold shadow-inner" 
                   : "bg-deep-plum/60 backdrop-blur-sm text-white/80 hover:text-white hover:bg-deep-plum/80"
               }`}
               aria-label={`Go to slide ${idx + 1}`}
             >
-              <span className="font-playfair text-xs sm:text-sm lg:text-base tracking-wide font-medium">
+              <span className="font-playfair text-[10px] sm:text-sm lg:text-base tracking-wide font-medium">
                 {slide.tabLabel}
               </span>
-              <span className={`text-[8px] sm:text-[9px] uppercase tracking-widest font-inter ${
+              <span className={`text-[7px] sm:text-[9px] uppercase tracking-widest font-inter ${
                 currentSlide === idx ? "text-primary-purple/80 font-medium" : "text-white/40"
               }`}>
                 {slide.imgTitle}
@@ -271,13 +271,13 @@ export default function Home() {
 
             {/* Content container aligned with max-w-7xl page grid */}
             <div className="max-w-7xl mx-auto w-full px-6 sm:px-12 lg:px-24 flex items-center h-full relative z-20">
-              <div className="max-w-2xl w-full space-y-6 text-left pt-20 sm:pt-24 lg:pt-32 pb-24 sm:pb-28 lg:pb-36">
+              <div className="max-w-2xl w-full space-y-4 sm:space-y-6 text-left pt-24 pb-28 sm:py-32">
                 <motion.div
                   variants={{
                     enter: { y: 24, opacity: 0 },
                     center: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 120, damping: 14 } }
                   }}
-                  className="text-gold-300 text-xs sm:text-sm font-semibold tracking-widest uppercase font-inter"
+                  className="text-gold-300 text-[10px] sm:text-sm font-semibold tracking-widest uppercase font-inter"
                 >
                   {slides[currentSlide].badge}
                 </motion.div>
@@ -287,7 +287,7 @@ export default function Home() {
                     enter: { y: 24, opacity: 0 },
                     center: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 120, damping: 14 } }
                   }}
-                  className="text-4xl sm:text-6xl lg:text-7xl font-playfair font-semibold leading-tight text-white"
+                  className="text-3xl sm:text-5xl lg:text-7xl font-playfair font-semibold leading-tight text-white"
                 >
                   {slides[currentSlide].title}
                 </motion.h1>
@@ -297,7 +297,7 @@ export default function Home() {
                     enter: { y: 24, opacity: 0 },
                     center: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 120, damping: 14 } }
                   }}
-                  className="text-base sm:text-lg text-white/85 max-w-xl leading-relaxed font-light font-inter"
+                  className="text-sm sm:text-lg text-white/85 max-w-xl leading-relaxed font-light font-inter"
                 >
                   {slides[currentSlide].description}
                 </motion.p>
@@ -307,11 +307,11 @@ export default function Home() {
                     enter: { y: 24, opacity: 0 },
                     center: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 120, damping: 14 } }
                   }}
-                  className="flex flex-col sm:flex-row items-center gap-4 pt-4"
+                  className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 pt-2 sm:pt-4"
                 >
                   <Link
                     href={slides[currentSlide].btnPrimary.href}
-                    className="px-8 py-4 bg-gradient-btn text-white rounded-full font-medium transition-all shadow-lg text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95"
+                    className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-btn text-white rounded-full font-medium transition-all shadow-lg text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95 text-sm sm:text-base"
                   >
                     {slides[currentSlide].btnPrimary.text}
                   </Link>
@@ -320,7 +320,7 @@ export default function Home() {
                       href={slides[currentSlide].btnSecondary.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 rounded-full font-medium transition-all text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 rounded-full font-medium transition-all text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95 text-sm sm:text-base"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.437.002 9.861-4.416 9.864-9.859.002-2.637-1.019-5.114-2.88-6.974C16.392 1.912 13.91 1.9 11.278 1.9c-5.44 0-9.866 4.418-9.869 9.861-.001 1.502.411 2.97 1.19 4.282L1.57 20.316l4.287-1.121 1.62.959z" />
@@ -330,7 +330,7 @@ export default function Home() {
                   ) : (
                     <Link
                       href={slides[currentSlide].btnSecondary.href}
-                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 rounded-full font-medium transition-all text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 rounded-full font-medium transition-all text-center w-full sm:w-auto cursor-pointer hover:scale-[1.02] active:scale-95 text-sm sm:text-base"
                     >
                       {slides[currentSlide].btnSecondary.text}
                     </Link>
