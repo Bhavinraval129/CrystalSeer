@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soft-purple-50: #fdfafc;
+  --color-soft-purple-100: #f8f1f8;
+  --color-soft-purple-200: #f0e1f0;
+  --color-soft-purple-300: #e3c9e3;
+  --color-soft-purple-400: #d1a8d1;
+  --color-soft-purple-500: #bc82bc;
+  --color-soft-purple-600: #a160a1;
+  --color-soft-purple-700: #844c84;
+  --color-soft-purple-800: #6e416e;
+  --color-soft-purple-900: #5d395d;
+  --color-soft-purple-950: #3b203b;
+
+  --color-gold-50: #faf7ed;
+  --color-gold-100: #f3ebd4;
+  --color-gold-200: #e7d8aa;
+  --color-gold-300: #dbbf7d;
+  --color-gold-400: #cca251;
+  --color-gold-500: #bd8933;
+  --color-gold-600: #a36d27;
+  --color-gold-700: #835221;
+  --color-gold-800: #6b4120;
+  --color-gold-900: #59341d;
+  --color-gold-950: #331c0e;
+
+  /* Semantic Mapping to preserve code compatibility */
+  --color-primary-purple: #844c84;
+  --color-deep-plum: #3b203b;
+  --color-lavender-mist: #f8f1f8;
+  --color-soft-lilac: #f0e1f0;
+  --color-gold-accent: #bd8933;
+  --color-ink: #3b203b;
+  --color-white: #FFFFFF;
+
+  --font-playfair: var(--font-playfair-display);
+  --font-inter: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdfafc;
+  color: #3b203b;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Glassmorphism V1 Styles */
+.glass {
+  background: rgba(253, 250, 252, 0.85);
+  backdrop-filter: blur(16px);
+  border-b: 1px solid rgba(227, 201, 227, 0.4);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(227, 201, 227, 0.35);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(188, 130, 188, 0.5);
+  box-shadow: 0 20px 45px rgba(110, 65, 110, 0.08);
+}
+
+/* Note: gradient text is avoided in JSX; this class kept for backward compat only */
+.text-gradient {
+  color: #844c84;
+}
+
+.bg-gradient-btn {
+  background: linear-gradient(135deg, #844c84 0%, #bc82bc 100%);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.bg-gradient-btn:hover {
+  box-shadow: 0 10px 25px rgba(188, 130, 188, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Icon circle used in promise / service cards */
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: #f8f1f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 3px rgba(59, 32, 59, 0.08), 0 0 0 4px rgba(248, 241, 248, 0.6);
+  flex-shrink: 0;
+}
+
+/* Thin gold divider line */
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #bd8933 40%, #bd8933 60%, transparent);
+  border: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes faq-open {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
