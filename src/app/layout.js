@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Crystal Seer | Ethereal Crystals & Astrology",
+  title: "CrystalSeer | Ethereal Crystals & Astrology",
   description: "Curated collection of ethically sourced, energized crystals and spiritual guidance services.",
 };
 

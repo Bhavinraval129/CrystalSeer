@@ -7,7 +7,7 @@ export default function FooterV1() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2 space-y-6">
-            <h3 className="font-playfair text-3xl font-medium text-white tracking-wide">Crystal Seer</h3>
+            <h3 className="font-playfair text-3xl font-medium text-white tracking-wide">CrystalSeer</h3>
             <p className="font-inter text-soft-purple-200 max-w-sm leading-relaxed">
               Elevating your spiritual journey through ethically sourced crystals, mystical readings, and profound cosmic connections.
             </p>
@@ -40,7 +40,7 @@ export default function FooterV1() {
         </div>
         
         <div className="pt-8 border-t border-soft-purple-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-inter text-sm text-soft-purple-400">© 2026 Crystal Seer. All rights reserved.</p>
+          <p className="font-inter text-sm text-soft-purple-400">© 2026 CrystalSeer. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-soft-purple-400 hover:text-white transition-colors">Instagram</a>
             <a href="#" className="text-soft-purple-400 hover:text-white transition-colors">TikTok</a>

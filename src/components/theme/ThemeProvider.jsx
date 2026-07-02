@@ -10,13 +10,13 @@ const defaultTheme = {
   headingFont: "'Playfair Display', serif",
   bodyFont: "'Inter', sans-serif",
   baseFontSize: "16px",
-  siteName: "Crystal Seer",
+  siteName: "CrystalSeer",
   tagline: "Ethereal Crystals & Mystic Healing",
   phone: "+91 70966 91255",
   email: "hello@crystalseer.in",
   whatsapp: "917096691255",
   address: "Mumbai, Maharashtra, India",
-  footerText: "© 2026 Crystal Seer. All rights reserved.",
+  footerText: "© 2026 CrystalSeer. All rights reserved.",
   logoUrl: null,
 };
 

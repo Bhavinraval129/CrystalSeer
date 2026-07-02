@@ -161,7 +161,7 @@ export default function AdminLayout({ children }) {
 
           <div className="text-center mt-8">
             <Link href="/" className="text-xs text-deep-plum/60 hover:text-deep-plum hover:underline font-medium">
-              ← Return to Crystal Seer
+              ← Return to CrystalSeer
             </Link>
           </div>
         </div>

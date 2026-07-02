@@ -62,17 +62,13 @@ export default function ProductDetailsClient({ product, relatedProducts }) {
               {product.name}
             </h1>
             
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-1 text-gold-500">
-                {"★".repeat(Math.round(product.rating))}
-                <span className="text-sm text-ink/75 font-semibold ml-1">({product.rating})</span>
-              </div>
-              {product.isBestseller && (
+            {product.isBestseller && (
+              <div className="flex items-center gap-3">
                 <span className="bg-primary-purple/10 text-primary-purple text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full">
                   Bestseller
                 </span>
-              )}
-            </div>
+              </div>
+            )}
 
 
           </div>

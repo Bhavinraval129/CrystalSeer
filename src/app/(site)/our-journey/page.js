@@ -1,8 +1,8 @@
 import { testimonials } from "@/data/testimonials";
 
 export const metadata = {
-  title: "Our Journey | Crystal Seer",
-  description: "Explore the timeline and milestones of Crystal Seer, from a personal home altar to a global sanctuary of healing.",
+  title: "Our Journey | CrystalSeer",
+  description: "Explore the timeline and milestones of CrystalSeer, from a personal home altar to a global sanctuary of healing.",
 };
 
 export default function OurJourneyPage() {
@@ -10,7 +10,7 @@ export default function OurJourneyPage() {
     {
       year: "2021",
       title: "The Seed of Intent",
-      description: "Our founder started Crystal Seer from a single wooden home altar. Blessing crystals for friends under full moon phases, she realized the profound need for truly authentic, high-vibration gems.",
+      description: "Our founder started CrystalSeer from a single wooden home altar. Blessing crystals for friends under full moon phases, she realized the profound need for truly authentic, high-vibration gems.",
       icon: "🌱"
     },
     {

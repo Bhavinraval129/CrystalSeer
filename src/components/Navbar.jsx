@@ -38,15 +38,16 @@ export default function Navbar({ theme = "v1" }) {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className={`flex items-center gap-2.5 ${logoClasses}`}>
-              {themeData?.logoUrl && (
+            <Link href="/" className={`flex items-center ${logoClasses}`}>
+              {themeData?.logoUrl ? (
                 <img
                   src={themeData.logoUrl}
                   alt={themeData.siteName || "Logo"}
-                  className="h-10 w-auto object-contain"
+                  className="h-16 md:h-20 w-auto object-contain py-1.5 transition-all duration-300"
                 />
+              ) : (
+                <span className="font-semibold tracking-wide">{themeData?.siteName || "CrystalSeer"}</span>
               )}
-              <span>{themeData?.siteName || "Crystal Seer"}</span>
             </Link>
           </div>
 

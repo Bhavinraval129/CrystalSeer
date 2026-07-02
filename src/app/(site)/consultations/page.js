@@ -1,7 +1,7 @@
 import { buildWhatsAppLink } from "@/utils/whatsapp";
 
 export const metadata = {
-  title: "Spiritual Consultations | Crystal Seer",
+  title: "Spiritual Consultations | CrystalSeer",
   description: "Schedule personal consultations for custom crystal recommendations, tarot readings, and numerology reports.",
 };
 

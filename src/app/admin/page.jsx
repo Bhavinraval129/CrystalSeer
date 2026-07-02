@@ -58,7 +58,7 @@ export default function AdminDashboard() {
     <div className="space-y-8">
       <div>
         <h1 className="font-playfair text-3xl font-bold text-deep-plum">Dashboard</h1>
-        <p className="text-deep-plum/60 mt-1">Welcome back! Here&apos;s an overview of Crystal Seer.</p>
+        <p className="text-deep-plum/60 mt-1">Welcome back! Here&apos;s an overview of CrystalSeer.</p>
       </div>
 
       {/* Stats Grid */}

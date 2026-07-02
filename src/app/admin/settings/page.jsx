@@ -112,7 +112,7 @@ export default function AdminSettingsPage() {
     <div className="max-w-3xl mx-auto space-y-6">
       <div>
         <h1 className="font-playfair text-3xl font-bold text-deep-plum">Site Settings</h1>
-        <p className="text-deep-plum/60 mt-1">Manage Crystal Seer branding, contact details, and theme.</p>
+        <p className="text-deep-plum/60 mt-1">Manage CrystalSeer branding, contact details, and theme.</p>
       </div>
 
       {toast && (
@@ -153,7 +153,7 @@ export default function AdminSettingsPage() {
           <h2 className="text-lg font-bold text-deep-plum">Site Identity</h2>
           <div>
             <label className="block text-sm font-medium text-deep-plum mb-1.5">Site Name</label>
-            <input type="text" value={form.site_name} onChange={(e) => setForm({ ...form, site_name: e.target.value })} placeholder="Crystal Seer" className={fieldClass} />
+            <input type="text" value={form.site_name} onChange={(e) => setForm({ ...form, site_name: e.target.value })} placeholder="CrystalSeer" className={fieldClass} />
           </div>
           <div>
             <label className="block text-sm font-medium text-deep-plum mb-1.5">Tagline</label>
