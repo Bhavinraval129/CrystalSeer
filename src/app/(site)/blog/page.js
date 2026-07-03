@@ -3,7 +3,7 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blogPosts";
 
 export const metadata = {
-  title: "Spiritual Blog & Lunar Guides | CrystalSeer",
+  title: "Spiritual Blog & Lunar Guides | CRYSTALSEER",
   description: "Read about crystal cleansing, money manifestation using Pyrite, and tarot layout explanations.",
 };
 

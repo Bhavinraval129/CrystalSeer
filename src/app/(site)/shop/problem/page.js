@@ -3,7 +3,7 @@ import Link from "next/link";
 import { problemCategories } from "@/data/problemCategories";
 
 export const metadata = {
-  title: "Shop by Intent | CrystalSeer",
+  title: "Shop by Intent | CRYSTALSEER",
   description: "Find healing crystals tailored to your emotional, physical, and financial blockages.",
 };
 

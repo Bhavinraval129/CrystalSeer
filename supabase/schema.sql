@@ -1,5 +1,5 @@
 -- ============================================================
--- CrystalSeer — Full Database Schema
+-- CRYSTALSEER — Full Database Schema
 -- Run this FIRST in Supabase SQL Editor
 -- ============================================================
 
@@ -32,13 +32,13 @@ CREATE TABLE products (
 -- Site Settings Table (Always single row, id=1)
 CREATE TABLE site_settings (
   id INT PRIMARY KEY DEFAULT 1,
-  site_name TEXT DEFAULT 'CrystalSeer',
+  site_name TEXT DEFAULT 'CRYSTALSEER',
   tagline TEXT DEFAULT 'Ethereal Crystals & Mystic Healing',
   phone TEXT DEFAULT '+91 98765 43210',
   email TEXT DEFAULT 'hello@crystalseer.in',
   whatsapp TEXT DEFAULT '919876543210',
   address TEXT DEFAULT 'Mumbai, Maharashtra, India',
-  footer_text TEXT DEFAULT '© 2026 CrystalSeer. All rights reserved.',
+  footer_text TEXT DEFAULT '© 2026 CRYSTALSEER. All rights reserved.',
   logo_url TEXT,
   theme_primary_color TEXT DEFAULT '#844c84',
   theme_background_color TEXT DEFAULT '#fdfafc',

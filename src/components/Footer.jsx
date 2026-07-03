@@ -19,13 +19,13 @@ export default function Footer() {
               <div className="relative w-24 h-12">
                 <img
                   src={theme.logoUrl}
-                  alt={theme.siteName || "CrystalSeer Logo"}
+                  alt={theme.siteName || "CRYSTALSEER Logo"}
                   className="object-contain w-full h-full object-left"
                 />
               </div>
             ) : (
               <h3 className="font-playfair text-2xl font-bold text-white tracking-wide">
-                {theme?.siteName || "CrystalSeer"}
+                {theme?.siteName || "CRYSTALSEER"}
               </h3>
             )}
             <p className="text-sm text-lavender-mist/70 max-w-sm leading-relaxed font-light font-inter">
@@ -98,7 +98,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-lavender-mist/50">
-          <p>© {new Date().getFullYear()} {theme?.siteName || "CrystalSeer"}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {theme?.siteName || "CRYSTALSEER"}. All rights reserved.</p>
           <div className="font-semibold uppercase tracking-widest text-soft-lilac text-[10px]">
             Crystals Crafted by Nature
           </div>

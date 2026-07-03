@@ -46,7 +46,7 @@ export default function Navbar({ theme = "v1" }) {
                   className="h-16 md:h-20 w-auto object-contain py-1.5 transition-all duration-300"
                 />
               ) : (
-                <span className="font-semibold tracking-wide">{themeData?.siteName || "CrystalSeer"}</span>
+                <span className="font-semibold tracking-wide">{themeData?.siteName || "CRYSTALSEER"}</span>
               )}
             </Link>
           </div>

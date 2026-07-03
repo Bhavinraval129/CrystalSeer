@@ -463,7 +463,7 @@ export default function Home() {
           </h2>
           
           <p className="text-sm md:text-base text-white/70 leading-relaxed font-light max-w-2xl mx-auto font-inter">
-            At CrystalSeer, we believe in the timeless connection between earth crystals and human alignment. Every cluster is bathed in Himalayan pink salt and charged overnight under full moon phases to cleanse preceding energies and raise vibrations to peak healing attunement.
+            At CRYSTALSEER, we believe in the timeless connection between earth crystals and human alignment. Every cluster is bathed in Himalayan pink salt and charged overnight under full moon phases to cleanse preceding energies and raise vibrations to peak healing attunement.
           </p>
           
           <div className="pt-4">

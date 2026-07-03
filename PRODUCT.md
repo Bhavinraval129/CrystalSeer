@@ -10,7 +10,7 @@ brand
 - **General Seekers**: People experiencing stress, blockages, or transitional life phases looking for tarot/numerology guidance.
 
 ## Product Purpose
-CrystalSeer offers a digital sanctuary to discover authentic, healer-activated, and moon-attuned crystals alongside spiritual counseling services. The goal is to provide a premium, trusted e-commerce experience that feels sacred and luxurious.
+CRYSTALSEER offers a digital sanctuary to discover authentic, healer-activated, and moon-attuned crystals alongside spiritual counseling services. The goal is to provide a premium, trusted e-commerce experience that feels sacred and luxurious.
 
 ## Brand Personality
 - **Voice**: Ethereal, luxurious, calming, and authoritative.

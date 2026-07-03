@@ -3,8 +3,8 @@ import Link from "next/link";
 import { buildWhatsAppLink } from "@/utils/whatsapp";
 
 export const metadata = {
-  title: "Our Story & Rituals | CrystalSeer",
-  description: "Learn about CrystalSeer's commitment to ethical mineral sourcing, full moon cleansing rituals, and spiritual authenticity.",
+  title: "Our Story & Rituals | CRYSTALSEER",
+  description: "Learn about CRYSTALSEER's commitment to ethical mineral sourcing, full moon cleansing rituals, and spiritual authenticity.",
 };
 
 export default function AboutPage() {
@@ -21,9 +21,9 @@ export default function AboutPage() {
       {/* Brand Story Block */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
         <div className="space-y-6">
-          <h2 className="text-3xl font-playfair font-semibold text-deep-plum">The CrystalSeer Vision</h2>
+          <h2 className="text-3xl font-playfair font-semibold text-deep-plum">The CRYSTALSEER Vision</h2>
           <p className="text-ink/80 leading-relaxed font-light text-sm">
-            CrystalSeer was founded with a single mission: to create a transparent, high-vibrational sanctuary for spiritual seekers. We realized that many commercial crystal stores mass-produce stones under poor mining conditions, stripping the mineral of its natural healing essence.
+            CRYSTALSEER was founded with a single mission: to create a transparent, high-vibrational sanctuary for spiritual seekers. We realized that many commercial crystal stores mass-produce stones under poor mining conditions, stripping the mineral of its natural healing essence.
           </p>
           <p className="text-ink/80 leading-relaxed font-light text-sm">
             We chose a different path. We work directly with conscious, family-owned local mines in Brazil, Madagascar, and India. Every stone is extracted respectfully from the earth, ensuring the initial energy remains pure and clear.
