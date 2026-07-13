@@ -3,8 +3,8 @@ import Link from "next/link";
 import { problemCategories } from "@/data/problemCategories";
 
 export const metadata = {
-  title: "Shop by Intent | CRYSTALSEER",
-  description: "Find healing crystals tailored to your emotional, physical, and financial blockages.",
+  title: "Shop By Purpose | CRYSTALSEER",
+  description: "Find healing crystals tailored to your health, wealth, relationship, and career goals.",
 };
 
 export default function ShopByProblem() {
@@ -15,10 +15,10 @@ export default function ShopByProblem() {
 
       <div className="text-center mb-16 space-y-4">
         <span className="text-gold-600 text-sm block">✧ Energy Alignment</span>
-        <h1 className="text-4xl md:text-6xl font-playfair font-semibold text-deep-plum">Shop by Intent & Problem</h1>
+        <h1 className="text-4xl md:text-6xl font-playfair font-semibold text-deep-plum">Shop By Purpose</h1>
         <div className="w-16 h-px bg-gold-accent mx-auto"></div>
         <p className="text-ink/75 max-w-2xl mx-auto font-light leading-relaxed">
-          Crystals hold distinct frequencies. Select a core life challenge or spiritual intention below to discover lab-certified gems activated specifically for that area.
+          Crystals hold distinct frequencies. Select a life goal or target purpose below to discover lab-certified gems activated specifically for that area.
         </p>
       </div>
 

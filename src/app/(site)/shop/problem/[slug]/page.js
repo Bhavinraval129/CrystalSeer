@@ -54,7 +54,7 @@ export default async function ProblemCategoryPage({ params }) {
     <div className="min-h-screen pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Header section */}
       <div className="text-center mb-16 space-y-4">
-        <span className="text-gold-600 text-sm block">✧ Shop by Intent</span>
+        <span className="text-gold-600 text-sm block">✧ Shop By Purpose</span>
         <h1 className="text-4xl md:text-6xl font-playfair font-semibold text-deep-plum">{category.name}</h1>
         <div className="w-16 h-px bg-gold-accent mx-auto"></div>
         <p className="text-ink/75 max-w-2xl mx-auto font-light leading-relaxed">
@@ -80,10 +80,6 @@ export default async function ProblemCategoryPage({ params }) {
                 </div>
                 <div className="p-6 text-center space-y-2">
                   <h3 className="text-xl font-playfair font-semibold text-deep-plum group-hover:text-primary-purple transition-colors">{product.name}</h3>
-                  <div className="flex justify-center items-center gap-1 text-gold-500 text-sm">
-                    {"★".repeat(Math.round(product.rating))}
-                    <span className="text-xs text-ink/60 ml-1">({product.rating})</span>
-                  </div>
                 </div>
               </Link>
               <div className="px-6 pb-6 pt-2">

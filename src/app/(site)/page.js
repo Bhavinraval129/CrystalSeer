@@ -371,13 +371,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Shop by Intent Grid (Replaces Shop by Problem, styled with premium category cards) */}
+      {/* 3. Shop by Purpose Grid */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-gold-600 text-sm block">✧ Healing Intents</span>
-          <h2 className="text-4xl md:text-5xl font-playfair font-semibold text-deep-plum pb-3">Shop by Intent</h2>
+          <span className="text-gold-600 text-sm block">✧ Crystal Intentions</span>
+          <h2 className="text-4xl md:text-5xl font-playfair font-semibold text-deep-plum pb-3">Shop By Purpose</h2>
           <div className="w-16 h-px bg-gold-accent mx-auto"></div>
-          <p className="text-ink/70 max-w-2xl mx-auto font-light mt-2 font-inter">Find specialized crystals attuning to your emotional, physical, and financial blockages.</p>
+          <p className="text-ink/70 max-w-2xl mx-auto font-light mt-2 font-inter">Choose what you need crystals for — and discover gems attuned specifically to your life goal.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {problemCategories.map(cat => (
@@ -391,7 +391,7 @@ export default function Home() {
                   <p className="text-sm text-ink/80 leading-relaxed font-light font-inter">{cat.description}</p>
                 </div>
                 <div className="pt-6 text-primary-purple font-medium text-sm inline-flex items-center group-hover:translate-x-1 transition-transform cursor-pointer">
-                  Explore Intent →
+                  Browse Matching Crystals →
                 </div>
               </div>
             </Link>
@@ -421,10 +421,6 @@ export default function Home() {
                   </div>
                   <div className="p-6 text-center space-y-2 bg-gradient-to-b from-white to-soft-purple-50/20">
                     <h3 className="text-xl font-playfair font-semibold text-deep-plum group-hover:text-primary-purple transition-colors">{product.name}</h3>
-                    <div className="flex justify-center items-center gap-1 text-gold-500 text-sm">
-                      {"★".repeat(Math.round(product.rating))}
-                      <span className="text-xs text-ink/60 ml-1">({product.rating})</span>
-                    </div>
                   </div>
                 </Link>
                 <div className="px-6 pb-6 pt-2 bg-gradient-to-b from-white to-soft-purple-50/20">

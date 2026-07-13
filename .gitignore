@@ -46,3 +46,10 @@ next-env.d.ts
 .impeccable/
 .vscode/
 
+# local reference images and documentation
+/*.png
+/*.jpg
+/*.jpeg
+/*.md
+!/README.md
+

@@ -97,8 +97,8 @@ export default function Header() {
                     <Link href="/shop/problem" onClick={closeAllMenus} className="flex gap-3 p-3 rounded-xl hover:bg-lavender-mist/50 transition-all group cursor-pointer">
                       <span className="text-xl">🔮</span>
                       <div>
-                        <h4 className="font-playfair font-bold text-sm text-deep-plum group-hover:text-primary-purple transition-colors">Shop by Intent</h4>
-                        <p className="text-[10px] text-ink/60 font-light mt-0.5 font-inter">Explore by stress, wealth, protection...</p>
+                        <h4 className="font-playfair font-bold text-sm text-deep-plum group-hover:text-primary-purple transition-colors">Shop By Purpose</h4>
+                        <p className="text-[10px] text-ink/60 font-light mt-0.5 font-inter">Explore by health, wealth, love, career...</p>
                       </div>
                     </Link>
                     <Link href="/shop/crystal-type" onClick={closeAllMenus} className="flex gap-3 p-3 rounded-xl hover:bg-lavender-mist/50 transition-all group cursor-pointer">
@@ -222,7 +222,7 @@ export default function Header() {
             <div>
               <p className="font-inter text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Shop</p>
               <div className="pl-4 space-y-2 border-l border-lavender-mist">
-                <Link href="/shop/problem" onClick={closeAllMenus} className="block py-1 font-inter text-sm text-ink hover:text-primary-purple">By Problem / Intent</Link>
+                <Link href="/shop/problem" onClick={closeAllMenus} className="block py-1 font-inter text-sm text-ink hover:text-primary-purple">By Purpose</Link>
                 <Link href="/shop/crystal-type" onClick={closeAllMenus} className="block py-1 font-inter text-sm text-ink hover:text-primary-purple">By Crystal Type</Link>
               </div>
             </div>

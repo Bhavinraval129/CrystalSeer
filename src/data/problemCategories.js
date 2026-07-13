@@ -1,44 +1,37 @@
 export const problemCategories = [
   {
     id: 1,
-    name: "Love & Relationships",
-    slug: "love-relationships",
-    description: "Attract soulmates, heal deep emotional wounds, and cultivate unconditional self-love.",
-    imageUrl: "/images/intents/love_relationships.png"
+    name: "Health",
+    slug: "health",
+    description: "Restore physical vitality, align your body's energy field, and support holistic healing from within.",
+    imageUrl: "/images/intents/health_wellbeing.png"
   },
   {
     id: 2,
-    name: "Wealth & Abundance",
-    slug: "wealth-abundance",
-    description: "Manifest wealth, lock in business success, and shield your financial energy.",
+    name: "Wealth",
+    slug: "wealth",
+    description: "Manifest lasting wealth, attract financial opportunities, and shield your abundance energy.",
     imageUrl: "/images/intents/wealth_abundance.png"
   },
   {
     id: 3,
-    name: "Protection & Positivity",
-    slug: "protection-positivity",
-    description: "Repel negative vibrations, clear stale energy, and build a protective spiritual shield.",
-    imageUrl: "/images/intents/protection_positivity.png"
+    name: "Love/Relationship",
+    slug: "love-relationship",
+    description: "Attract soulmates, heal deep emotional wounds, and cultivate unconditional self-love.",
+    imageUrl: "/images/intents/love_relationships.png"
   },
   {
     id: 4,
-    name: "Peace & Stress Relief",
-    slug: "peace-stress-relief",
-    description: "Soothe anxiety, quiet an overactive mind, and invite deep, peaceful sleep.",
-    imageUrl: "/images/intents/peace_stress_relief.png"
+    name: "Career - Job/Business",
+    slug: "career-job-business",
+    description: "Unlock career breakthroughs, grow your business, and attract high-value opportunities with crystal energy.",
+    imageUrl: "/images/intents/career_job_business.png"
   },
   {
     id: 5,
-    name: "Confidence & Success",
-    slug: "confidence-success",
-    description: "Boost your personal power, gain clarity of purpose, and activate your solar plexus chakra.",
-    imageUrl: "/images/intents/confidence_success.png"
-  },
-  {
-    id: 6,
-    name: "Health & Wellbeing",
-    slug: "health-wellbeing",
-    description: "Align your physical vitality, clean your energy field, and support holistic body healing.",
-    imageUrl: "/images/intents/health_wellbeing.png"
+    name: "Money",
+    slug: "money",
+    description: "Supercharge your cash flow, dissolve money blocks, and invite continuous financial abundance.",
+    imageUrl: "/images/intents/money.png"
   }
 ];
