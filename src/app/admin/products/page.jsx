@@ -144,11 +144,11 @@ export default function AdminProductsPage() {
                     </td>
                     <td className="px-6 py-4">
                       {product.hasDetails === false ? (
-                        <span className="text-xs bg-red-50 text-red-500 px-3 py-1 rounded-full font-medium border border-red-200">Inactive</span>
+                        <span className="text-xs bg-red-50 text-red-500 px-3 py-1 rounded-full font-medium border border-red-200 whitespace-nowrap">Inactive</span>
                       ) : product.isBestSeller ? (
-                        <span className="text-xs bg-gold-50 text-gold-accent px-3 py-1 rounded-full font-semibold border border-gold-200">Best Seller</span>
+                        <span className="text-xs bg-gold-50 text-gold-accent px-3 py-1 rounded-full font-semibold border border-gold-200 whitespace-nowrap">Best Seller</span>
                       ) : (
-                        <span className="text-xs bg-soft-purple-100 text-primary-purple px-3 py-1 rounded-full font-medium border border-soft-purple-200">Active</span>
+                        <span className="text-xs bg-soft-purple-100 text-primary-purple px-3 py-1 rounded-full font-medium border border-soft-purple-200 whitespace-nowrap">Active</span>
                       )}
                     </td>
                     <td className="px-6 py-4 text-right">

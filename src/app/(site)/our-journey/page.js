@@ -106,9 +106,6 @@ export default function OurJourneyPage() {
           {testimonials.map(test => (
             <div key={test.id} className="p-8 rounded-[2rem] bg-white border border-lavender-mist hover:shadow-xl hover:border-soft-lilac transition-all duration-400 flex flex-col justify-between">
               <div className="space-y-4">
-                <div className="flex gap-1 text-gold-500 text-base">
-                  {"★".repeat(test.rating)}
-                </div>
                 <blockquote className="font-playfair text-sm text-ink/80 italic leading-relaxed">
                   "{test.quote}"
                 </blockquote>

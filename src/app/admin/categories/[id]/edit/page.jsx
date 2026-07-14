@@ -7,7 +7,8 @@ import { ArrowLeft, Save } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 
 export default function EditCategoryPage() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params?.id;
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [form, setForm] = useState({ name: "", description: "", icon: "gem", seoTitle: "", downloadUrl: "" });
@@ -15,6 +16,7 @@ export default function EditCategoryPage() {
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
+    if (!id) return;
     async function fetchCategory() {
       const supabase = createClient();
       const { data, error } = await supabase.from("categories").select("*").eq("id", id).single();

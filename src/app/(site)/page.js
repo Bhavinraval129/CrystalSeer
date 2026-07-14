@@ -543,7 +543,6 @@ export default function Home() {
                     activeTestimonial === idx ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-4"
                   }`}
                 >
-                  <div className="text-gold-400 text-sm tracking-widest">{"★".repeat(test.rating)}</div>
                   <blockquote className="font-playfair text-lg md:text-xl text-ink leading-relaxed italic max-w-2xl">
                     {test.quote}
                   </blockquote>

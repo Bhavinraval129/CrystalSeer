@@ -22,7 +22,8 @@ function ToggleSwitch({ checked, onChange }) {
 }
 
 export default function EditProductPage() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params?.id;
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [form, setForm] = useState({
@@ -42,6 +43,7 @@ export default function EditProductPage() {
   const imageInputRef = useRef(null);
 
   useEffect(() => {
+    if (!id) return;
     async function fetchProduct() {
       const supabase = createClient();
       const { data, error } = await supabase.from("products").select("*").eq("id", id).single();
